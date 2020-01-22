@@ -40,9 +40,11 @@ Vue.use(VueShowMore)
 
  example: 
 
+```
   <VueShowMore :text="回复chance722的一段话..." :btns="['...Show More', 'Hide']">
     <span slot="before" class="remind">@chance722</span>
   </VueShowMore>
+```
 
   输出 `@chance722 回复chance722的一段话`
 
