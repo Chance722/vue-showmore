@@ -50,4 +50,4 @@ Vue.use(VueShowMore)
 
 ## Demo
 
-- 待补充
+- [https://github.com/Chance722/vue-showmore-demo](https://github.com/Chance722/vue-showmore-demo)
