@@ -50,4 +50,4 @@ Vue.use(VueShowMore)
 
 ## Demo
 
-- [https://github.com/Chance722/vue-showmore-demo](https://github.com/Chance722/vue-showmore-demo)
+- [https://chance722.github.io/vue-showmore-demo/](https://chance722.github.io/vue-showmore-demo/)

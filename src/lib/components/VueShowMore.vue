@@ -94,14 +94,16 @@ export default {
     },
     computeLines () {
       const styles = window.getComputedStyle(this.$refs.vueShowMore, null)
-      console.log(styles.lineHeight)
+
       if (styles.lineHeight === 'normal') {
         document.querySelector('body').setAttribute('style', `line-height: 1.5`)
-        this.lineHeight = parseInt(styles.lineHeight, 10)
-      } else {
-        this.lineHeight = parseInt(styles.lineHeight, 10)
       }
-      this.totalHeight = parseInt(styles.height, 10)
+      this.lineHeight = parseInt(styles.lineHeight, 10)
+      if (styles.height === 'auto') {
+        this.totalHeight = this.lineHeight
+      } else {
+        this.totalHeight = parseInt(styles.height, 10)
+      }
       this.totalLines = Math.round(this.totalHeight / this.lineHeight)
     },
     setMaxHeight () {
